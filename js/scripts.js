@@ -234,7 +234,7 @@ $(document).ready(function () {
             } else if  (MD5($('#invite_code').val()) === '5d50d22735a7469266aab23fd8aeb536' && $('#extras').val() > 6) {
                 $('#alert-wrapper').html(alert_markup('danger', '<strong>Sorry!</strong> Only up to 6 companions is allowed.'));
             } else {
-                $.post('https://script.google.com/macros/s/AKfycbz_ZMTT3z_ddvT1GipnH7HGA2HWb27eMmDb6Fz-I5sxe7dkKdpRF0Tp0NAy1lJ41Mzb/exec', data)
+                $.post('https://script.google.com/macros/s/AKfycbx1_lhnf73B-yv4fyKEnABGbWM1XP3WPEPmmaB_0ePNP-sHgyCFVZfNY1fZtkzb-DhK/exec', data)
                     .done(function (data) {
                         console.log(data);
                         if (data.result === "error") {
